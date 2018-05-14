@@ -1,0 +1,16 @@
+/*
+Theme Name: Beetle Go Child Theme
+Theme URI: http://mokaine.com/
+Author: Mokaine
+Author URI: http://mokaine.com/
+Description: A free WordPress Theme for Designers, Photographers and Storytellers.
+Version: 1.0.1
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: beetle-go
+
+Beetle is crafted from Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Written by Pasquale Vitiello (pasqualevitiello@gmail.com)
+*/
+
+@import url("../beetle-go/style.css");
