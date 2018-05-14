@@ -1,0 +1,27 @@
+# BEGIN Lolipop [ http://lolipop.jp/manual/blog/wp-htaccess/ ]
+
+<Files wp-login.php>
+ErrorDocument 403 /lolipop_service_documents/wp-login-deny.html
+Order deny,allow
+Deny  from all
+Allow from 180.12.151.111
+Allow from 221.116.10.194
+</Files>
+
+# END Lolipop
+
+# BEGIN Svg images support
+
+# END Svg images support
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
