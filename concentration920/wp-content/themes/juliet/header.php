@@ -38,26 +38,27 @@ wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/j
 <!-- ヘッダー -->
 <header id="header">
 
-<!-- ヘッダー中身 -->    
+<!-- ヘッダー中身 -->
 <div class="header-inner">
 
 <!-- ロゴ -->
 <h1 class="logo">
 <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo (get_option('logo_url')) ? get_option('logo_url') : get_bloginfo('template_url') .'/images/logo.gif' ?>" alt="<?php bloginfo('name'); ?>"/></a>
 </h1>
+いいいい
 <!-- / ロゴ -->
 
 <!-- サーチ -->
 <div class="contact">
 <?php get_search_form(); ?>
 </div>
-<!-- / サーチ -->  
+<!-- / サーチ -->
 
-</div>    
-<!-- / ヘッダー中身 -->    
+</div>
+<!-- / ヘッダー中身 -->
 
 </header>
-<!-- / ヘッダー -->  
+<!-- / ヘッダー -->
 <div class="clear"></div>
 
 <!-- トップナビゲーション -->
@@ -66,4 +67,4 @@ wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/j
 </nav>
 
 <!-- / トップナビゲーション -->
-<div class="clear"></div>  
+<div class="clear"></div>
