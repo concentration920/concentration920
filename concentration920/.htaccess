@@ -6,6 +6,7 @@ Order deny,allow
 Deny  from all
 Allow from 180.12.151.111
 Allow from 221.116.10.194
+Allow from 153.204.73.198
 </Files>
 
 # END Lolipop
