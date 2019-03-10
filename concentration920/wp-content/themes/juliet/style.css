@@ -126,15 +126,18 @@ _width: 1200px;
 * ************************************************ */
 
 #header {
-width: 100%；
+width: 100%;
+background: #181818;
 }
 
 .header-inner {
 overflow: hidden;
 margin: 0px auto 0 auto;
-padding: 50px 0 10px 0;
+padding: 25px 0 25px 0;
 max-width: 1200px;
 _width: 1200px;
+position: relative;
+display: flex;
 }
 
 #header h1 {
@@ -145,7 +148,10 @@ margin: 0;
 .logo {
 float: left;
 margin: 0px 0px 0px 0px;
-padding:0px 0px 0px 0px;
+padding:0px 20px 0px 20px;
+}
+.logo img{
+    height: 50px;
 }
 
 .contact {
@@ -162,10 +168,8 @@ padding: 0px 0px 0 0;
 
 
 #nav {
-width:1200px;
+width:800px;
 margin: 0 auto 0px auto;
-border-top: double 3px #ccc;
-border-bottom: double 3px #ccc;
 }
 
 #nav ul {
@@ -177,6 +181,11 @@ margin: auto;
 clear: both;
 margin: 0 auto;
 position: relative;
+}
+
+.nav-menu{
+display: flex;
+justify-content: flex-end;
 }
 
 ul.nav-menu,
@@ -192,11 +201,35 @@ margin: 0 0;
 }
 
 .nav-menu li a {
-color: #333;
+color: #fff;
 display: block;
 font-size: 14px;
 text-decoration: none;
-padding: 12px 30px 12px 30px;
+padding: 7px 20px 7px 20px;
+margin:0 2px;
+border-radius: 4px;
+font-weight: bold;
+line-height: 1.4;
+}
+.nav-menu li a:after {
+    display:block;
+    width:100%;
+    text-align: center;
+    font-size: 11px!important;
+    color:#fff;
+    font-weight: lighter;
+}
+.nav-menu li:nth-child(1) a:after {
+    content: '作品一覧';
+}
+.nav-menu li:nth-child(2) a:after {
+    content: '自己紹介';
+}
+.nav-menu li:nth-child(3) a:after {
+    content: '職歴';
+}
+.nav-menu li:nth-child(4) a:after {
+    content: 'メッセージ';
 }
 
 .nav-menu li:hover > a,
@@ -244,6 +277,14 @@ display: block;
 color: #333;
 background: #f9f9f9;
 }
+.nav-menu .current_page_item > a:after,
+.nav-menu .current_page_ancestor > a:after,
+.nav-menu .current-menu-item > a:after,
+.nav-menu .current-menu-ancestor > a:after {
+color: #333;
+background: #f9f9f9;
+}
+
 
 
 
@@ -278,6 +319,11 @@ height: 350px;
 margin:0 0 0 0;
 padding: 0 0 0 0;
 word-break:break-all;
+}
+
+#main.no-side-page{
+    max-width:750px;
+    margin:0 auto 0 auto;
 }
 
 
@@ -1432,7 +1478,7 @@ ins iframe { min-height:350px; }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 .wrapper { width: 750px;}
 .header-inner { width: 750px; margin:auto; padding-top: 50px;}
-#nav { float: none; width: 750px; background: #fff; margin-bottom:-10px; padding: 0; border-top: double 3px #ccc; border-bottom: double 3px #ccc;}
+#nav { float: none; margin-bottom:-10px; padding: 0;}
 li.item { height:240px; margin-bottom: 40px; }
 .item-img { margin: 0 0 5px 0; height: 151px; overflow: hidden; }
 .twothird { width: 460px; margin-right:10px; }
@@ -1447,12 +1493,16 @@ ins iframe { min-height:300px; }
 
 @media only screen and (max-width: 767px) {
 .wrapper { width: 300px; }
-.header-inner { width: 300px; margin:auto; padding-top: 50px;}
-.logo { text-align:center; }
+.header-inner { width: 300px; margin:auto; padding-top: 50px;flex-wrap: wrap; text-align: center;}
+.logo { text-align:center;  width: 100%;}
 .contact { display:none;}
 #header h1, #header .logo { float: none; margin-bottom: 0px;}
-#nav { float: none; text-align:center; width: 300px; background: #fff; margin-bottom:-10px; margin-top:30px; padding: 0; border-top: double 3px #ccc; border-bottom: double 3px #ccc;}
-.nav-menu li a { color: #333; display: block; font-size: 12px; padding: 10px 10px; text-decoration: none;}
+#nav { float: none; text-align:center; width: 300px; margin-bottom:-10px; margin-top:30px; padding: 0;}
+.nav-menu{
+display: flex;
+justify-content: flex-end;
+}
+.nav-menu li a { color: #fff; display: block; font-size: 12px; padding: 10px 10px; text-decoration: none;}
 #top-slide{ width:100%; padding: 0px; margin: 40px auto 20px auto;}
 .cycle-slideshow { overflow: hidden; width: 300px; height: 109px; margin-bottom:-10px;}
 li.item { height:270px; margin-bottom: 40px; }
@@ -1470,8 +1520,8 @@ ins iframe { min-height:300px; }
 .wrapper { width: 420px; }
 .header-inner { width: 420px; margin:auto; padding-top: 50px;}
 .logo { text-align:center; }
-#nav { float: none; width: 420px; background: #fff; margin-bottom:-10px; padding: 0; border-top: double 3px #ccc; border-bottom: double 3px #ccc;}
-.nav-menu li a { color: #333; display: block; font-size: 13px; padding: 10px 10px; text-decoration: none;}
+#nav { float: none; width: 420px;; margin-bottom:-10px; padding: 0; }
+.nav-menu li a { color: #fff; display: flex;justify-content: flex-end; font-size: 13px; padding: 10px 10px; text-decoration: none;}
 .cycle-slideshow { overflow: hidden; width: 420px; height: 157px; margin-bottom:-10px;}
 .footer-inner { width: 420px;}
 li.item { height: 340px; margin-bottom: 40px; }
@@ -1486,4 +1536,96 @@ ins iframe { min-height:300px; }
 /*  追記  */
 #top-slide{
     display:none;
+}
+
+/*  サイドバーなし　単独ページ  */
+.no-side-page .pagetitle{
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 0;
+    margin-bottom:0;
+    line-height: 1.2;
+}
+.no-side-page .subcopy{
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+    margin:0;
+}
+.no-side-page .maincopy{
+    text-align: center;
+    font-size: 24px;
+    margin:40px 0 40px 0;
+    line-height: 1.4;
+}
+.no-side-page .p-ttl{
+    font-size: 16px;
+    color: #333;
+    padding:0;
+    font-weight: bold;
+}
+.no-side-page .p-txt{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 40px;
+}
+.no-side-page .profile__face{
+    text-align: center;
+    margin:40px 0 40px 0;
+    padding: 0;
+}
+.no-side-page .profile__face img{
+    width:100px;
+}
+
+.no-side-page .profile__name{
+    text-align: center;
+    font-size:45px;
+    font-weight:bold;
+    line-height: 1.4;
+    letter-spacing: 0.2em;
+    margin-bottom: 100px;
+    color: #333;
+}
+.no-side-page .profile__name span{
+    display: block;
+    font-size:16px;
+    font-weight:normal;
+    letter-spacing: 0.02em;
+}
+
+.no-side-page .profile__table{
+    width:100%;
+    border-top: 1px solid #dadada;
+}
+.no-side-page .profile__table tr{
+    border-bottom: 1px solid #dadada;
+}
+.no-side-page .profile__table th{
+    padding:30px 20px;
+    font-weight: bold;
+    width:130px;
+    font-size:14px;
+}
+.no-side-page .profile__table td{
+    padding:30px 10px;
+    font-size:14px;
+    line-height: 1.8;
+}
+
+@media only screen and (max-width: 480px) {
+    .no-side-page .profile__table th{
+        display: block;
+        width:100%;
+        padding: 20px 10px 5px 10px;
+    }
+    .no-side-page .profile__table td{
+        display: block;
+        width:100%;
+        padding:5px 10px 20px 10px;
+    }
+}
+
+.history__companyinfo{
+    background-color: #ccc;
 }

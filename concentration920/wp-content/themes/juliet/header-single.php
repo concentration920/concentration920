@@ -38,7 +38,7 @@ wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/j
 <!-- ヘッダー -->
 <header id="header">
 
-<!-- ヘッダー中身 -->    
+<!-- ヘッダー中身 -->
 <div class="header-inner">
 
 <!-- ロゴ -->
@@ -46,24 +46,17 @@ wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/j
 <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo (get_option('logo_url')) ? get_option('logo_url') : get_bloginfo('template_url') .'/images/logo.gif' ?>" alt="<?php bloginfo('name'); ?>"/></a>
 </div>
 <!-- / ロゴ -->
-
-<!-- サーチ -->
-<div class="contact">
-<?php get_search_form(); ?>
-</div>
-<!-- / サーチ -->  
-
-</div>    
-<!-- / ヘッダー中身 -->    
-
-</header>
-<!-- / ヘッダー -->  
-<div class="clear"></div>
-
 <!-- トップナビゲーション -->
 <nav id="nav" class="main-navigation" role="navigation">
 <?php wp_nav_menu( array( 'menu' => 'topnav', 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 </nav>
-
 <!-- / トップナビゲーション -->
-<div class="clear"></div>  
+</div>
+<!-- / ヘッダー中身 -->
+
+</header>
+<!-- / ヘッダー -->
+<div class="clear"></div>
+
+
+<div class="clear"></div>

@@ -43,16 +43,14 @@ wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/j
 
 <!-- ロゴ -->
 <h1 class="logo">
-<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo (get_option('logo_url')) ? get_option('logo_url') : get_bloginfo('template_url') .'/images/logo.gif' ?>" alt="<?php bloginfo('name'); ?>"/></a>
+    <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo (get_option('logo_url')) ? get_option('logo_url') : get_bloginfo('template_url') .'/images/logo.gif' ?>" alt="<?php bloginfo('name'); ?>"/></a>
 </h1>
-いいいい
 <!-- / ロゴ -->
 
-<!-- サーチ -->
-<div class="contact">
-<?php get_search_form(); ?>
-</div>
-<!-- / サーチ -->
+<!-- トップナビゲーション -->
+<nav id="nav" class="main-navigation" role="navigation">
+<?php wp_nav_menu( array( 'menu' => 'topnav', 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+</nav>
 
 </div>
 <!-- / ヘッダー中身 -->
@@ -61,10 +59,7 @@ wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/j
 <!-- / ヘッダー -->
 <div class="clear"></div>
 
-<!-- トップナビゲーション -->
-<nav id="nav" class="main-navigation" role="navigation">
-<?php wp_nav_menu( array( 'menu' => 'topnav', 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-</nav>
+
 
 <!-- / トップナビゲーション -->
 <div class="clear"></div>
