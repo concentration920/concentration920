@@ -1627,5 +1627,23 @@ ins iframe { min-height:300px; }
 }
 
 .history__companyinfo{
-    background-color: #ccc;
+    background-color: #f1f1f1;
+    padding: 20px 10px 20px 20px;
+    margin: 60px 0 0 0;
+}
+.history__companyinfo--ttl{
+    font-size:14px;
+    font-weight: bold;
+    background-image: url(http://concentration920.com/wp-content/themes/juliet/images/building.svg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 20px 20px;
+    padding-left:30px;
+}
+.history__companyinfo--txt{
+    font-size:33px;
+    line-height: 1.8;
+}
+.history__workinfo-img{
+    width:100px;
 }
