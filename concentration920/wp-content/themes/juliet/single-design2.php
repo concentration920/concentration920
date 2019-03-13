@@ -10,7 +10,7 @@ Template Name Posts: サイドバー無し
 <div class="wrapper">
 
 <!-- メインwrap -->
-<div id="main">
+<div id="main" class="no-side-post">
 
 
 <!-- コンテンツブロック -->
@@ -33,12 +33,12 @@ Template Name Posts: サイドバー無し
 
 <!-- ウィジェットエリア（本文下の広告枠） -->
 <div class="row widget-adspace">
-<article>	
+<article>
 <div id="topbox">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('本文下の広告枠') ) : ?>
 <?php endif; ?>
 </div>
-</article>	
+</article>
 </div>
 <!-- / ウィジェットエリア（本文下の広告枠） -->
 
@@ -94,12 +94,12 @@ wp_reset_postdata(); ?>
 
 <!-- ウィジェットエリア（コメント下の広告枠） -->
 <div class="row widget-adspace">
-<article>	
+<article>
 <div id="topbox">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('コメント下の広告枠') ) : ?>
 <?php endif; ?>
 </div>
-</article>	
+</article>
 </div>
 <!-- / ウィジェットエリア（コメント下の広告枠） -->
 

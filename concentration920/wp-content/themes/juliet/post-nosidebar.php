@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: サイドバー無し
+Template Name: 記事サイドバー無し
 */
 ?>
 
@@ -11,7 +11,7 @@ Template Name: サイドバー無し
 <div class="wrapper">
 
 <!-- メインwrap -->
-<div id="main" class="no-side-page">
+<div id="main" class="no-side-post">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
