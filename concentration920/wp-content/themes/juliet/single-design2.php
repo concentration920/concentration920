@@ -1,16 +1,16 @@
 <?php
 /*
-Template Name Posts: サイドバー無し
+Template Name Posts: サイドバー無しです
 */
 ?>
 
 <?php get_header('single'); ?>
 
 <!-- 全体warapper -->
-<div class="wrapper">
+<div class="wrapper no-side-post">
 
 <!-- メインwrap -->
-<div id="main" class="no-side-post">
+<div id="main" >
 
 
 <!-- コンテンツブロック -->
@@ -21,7 +21,7 @@ Template Name Posts: サイドバー無し
 <article>
 
 <!-- ページタイトル -->
-<h2 class="pagetitle"><?php the_category(', '); ?></h2>
+<h2 class="pagetitle"><?php the_category('　>　'); ?></h2>
 <!-- / ページタイトル -->
 
 <!-- 投稿 -->
